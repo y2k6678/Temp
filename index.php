@@ -1,7 +1,7 @@
 <?php 
  
    $url1=$_SERVER['REQUEST_URI'];
-    header("Refresh: 5; URL=$url1");
+    header("Refresh: 60; URL=$url1");
   
 
 define('LINE_API',"https://notify-api.line.me/api/notify");
