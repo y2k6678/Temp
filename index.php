@@ -1,6 +1,6 @@
 <?php
 define('LINE_API',"https://notify-api.line.me/api/notify");
- <meta http-equiv="refresh" content="5"/>
+echo " <META HTTP-EQUIV=\"REFRESH" CONTENT="2; URL=index.php">\n";
 $token = "PIGX1czxHELPwV8XpSdtgBsSmU292IljgJIT4IhUQLn"; //ใส่Token ที่copy เอาไว้
 
 $content = file_get_contents('php://input');
