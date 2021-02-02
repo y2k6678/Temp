@@ -11,7 +11,7 @@ $iterator = new RecursiveArrayIterator($tempJson);
  
 $str = "sssssssdfweewwfwwwww Test Line Notify API "; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
  
-$res = notify_message($iterator,$token);
+$res = notify_message($tempJson,$token);
 print_r($res);
 function notify_message($message,$token){
  $queryData = array('message' => $message);
