@@ -1,4 +1,10 @@
-<?php <meta http-equiv="refresh" content="10" > 
+<?php 
+ 
+   $url1=$_SERVER['REQUEST_URI'];
+    header("Refresh: 5; URL=$url1");
+  
+    </body>
+</html>
 define('LINE_API',"https://notify-api.line.me/api/notify");
 $token = "PIGX1czxHELPwV8XpSdtgBsSmU292IljgJIT4IhUQLn"; //ใส่Token ที่copy เอาไว้
 
