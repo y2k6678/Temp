@@ -6,11 +6,12 @@ $token = "PIGX1czxHELPwV8XpSdtgBsSmU292IljgJIT4IhUQLn"; //ใส่Token ที�
 $content = file_get_contents('php://input');
 $events = json_decode($content, true);
 $tempJson = file_get_contents('https://api.thingspeak.com/channels/1294007/fields/1.json?api_key=I6HUYWPQC9YSJQC9&results=2');
-$temp = $tempJson['feeds'][0]['field1']
+$iterator = new RecursiveArrayIterator($tempJson);
+//$temp = $tempJson['feeds'][0]['field1']
  
 $str = "sssssssdfweewwfwwwww Test Line Notify API "; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
  
-$res = notify_message($temp,$token);
+$res = notify_message($iterator,$token);
 print_r($res);
 function notify_message($message,$token){
  $queryData = array('message' => $message);
